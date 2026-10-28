@@ -97,7 +97,16 @@
   .chips{display:flex;flex-wrap:wrap;gap:12px}
   .chip{background:var(--white);padding:12px 22px;border-radius:999px;font-weight:700;border:2px solid var(--ink);transition:.2s}
   .chip:hover{background:var(--cream);transform:rotate(-2deg) scale(1.05)}
-
+  
+/* CERTIFICATE PICTURES */
+.certs{background:var(--white)}
+.cert-pics{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:22px}
+.cert-pic{background:var(--mist);border-radius:var(--radius);padding:14px;transition:.3s;display:block;border:2px solid transparent}
+.cert-pic:hover{transform:translateY(-8px);border-color:var(--blue);background:var(--cream)}
+.cert-pic img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:14px;display:block;background:var(--white)}
+.cert-pic h3{font-size:1.1rem;margin:14px 6px 2px}
+.cert-pic p{margin:0 6px 6px;opacity:.8;font-size:.95rem}
+  
   /* CONTACT */
   .contact{background:var(--ink);color:var(--white);text-align:center}
   .contact h2{margin-bottom:14px}
